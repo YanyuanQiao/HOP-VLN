@@ -2,7 +2,7 @@
 
 This repository is the official implementation of [HOP: History-and-Order Aware Pre-training for Vision-and-Language Navigation](https://arxiv.org/abs/2007.09554). 
 
-![framework](files/architecture.png)
+![architecture](files/architecture.jpg)
 
 ## Prerequisites
 ```sh
