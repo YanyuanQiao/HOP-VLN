@@ -1,0 +1,9 @@
+numpy
+networkX
+tensorboardX
+tqdm
+pytorch-transformers==1.2.0
+pandas == 0.24.2
+pytorch-pretrained-bert == 0.6.2
+ipdb
+h5py  == 2.9.0 

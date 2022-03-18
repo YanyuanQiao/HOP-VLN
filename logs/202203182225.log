@@ -1,0 +1,38 @@
+2022-03-18 22:25:58,739 - main.py[line:665] - WARNING: Process rank: -1, device: cuda, n_gpu: 3, distributed training: False, 16-bits training: False
+2022-03-18 22:26:01,461 - modeling_utils.py[line:199] - INFO: loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at /home/wp/.cache/torch/pytorch_transformers/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+2022-03-18 22:26:01,462 - modeling_utils.py[line:216] - INFO: Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+2022-03-18 22:26:10,030 - tokenization_utils.py[line:384] - INFO: loading file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-vocab.txt from cache at /home/wp/.cache/torch/pytorch_transformers/26bc1ad6c0ac742e9b52263248f6d0f00068293b33709fae12320c0e35ccfbbb.542ce4285a40d23a559526243235df47c5f75c197f04f37d1a0c124c32c9a084
+2022-03-18 22:26:10,248 - vilmodel.py[line:1031] - INFO: DicModel Image Dimension: 2176
+2022-03-18 22:26:14,379 - main.py[line:693] - INFO: Training/evaluation parameters {'train_data_file': 'data/train/', 'eval_data_file': 'data/collect_traj_test/', 'output_dir': 'result/', 'model_type': 'bert', 'model_name_or_path': 'bert-base-uncased', 'mlm': True, 'mlm_probability': 0.15, 'config_name': '', 'tokenizer_name': '', 'cache_dir': '', 'block_size': 510, 'do_train': False, 'do_eval': False, 'do_trainval': True, 'evaluate_during_training': False, 'do_lower_case': False, 'per_gpu_train_batch_size': 128, 'per_gpu_eval_batch_size': 128, 'gradient_accumulation_steps': 1, 'learning_rate': 5e-05, 'weight_decay': 0.0, 'adam_epsilon': 1e-08, 'max_grad_norm': 1.0, 'num_train_epochs': 80.0, 'max_steps': -1, 'warmup_steps': 0, 'logging_steps': 50, 'save_steps': 50, 'eval_all_checkpoints': False, 'no_cuda': False, 'overwrite_output_dir': True, 'overwrite_cache': False, 'seed': 42, 'fp16': False, 'fp16_opt_level': 'O1', 'local_rank': -1, 'server_ip': '', 'server_port': '', 'vision_size': 2176, 'action_space': 36, 'vl_layers': 4, 'la_layers': 9, 'update': True, 'update_add_layer': True, 'include_next': True, 'result_dir': 'tasks/R2R/results/', 'plot_dir': 'tasks/R2R/plots/', 'snapshot_dir': 'tasks/R2R/snapshots/', 'philly': False, 'resume_path': None, 'run_name': 'hop', 'n_gpu': 3, 'device': device(type='cuda')}
+2022-03-18 22:29:55,876 - main.py[line:137] - INFO: ***** Running training *****
+2022-03-18 22:29:55,876 - main.py[line:138] - INFO:   Num examples = 1069620
+2022-03-18 22:29:55,876 - main.py[line:139] - INFO:   Num Epochs = 80
+2022-03-18 22:29:55,876 - main.py[line:140] - INFO:   Instantaneous batch size per GPU = 128
+2022-03-18 22:29:55,876 - main.py[line:142] - INFO:   Total train batch size (w. parallel, distributed & accumulation) = 384
+2022-03-18 22:29:55,876 - main.py[line:143] - INFO:   Gradient Accumulation steps = 1
+2022-03-18 22:29:55,876 - main.py[line:144] - INFO:   Total optimization steps = 222880
