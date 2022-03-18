@@ -170,10 +170,10 @@ def trainval(args, train_dataset, eval_dataset, model, tokenizer):
                               total=len(train_dataloader),
                               bar_format="{l_bar}{r_bar}",
                               disable=False)
-        if epo < 3:
-            tasks = ['mlm', 'itm', 'order', '3class', 'action']
+        if epo < 2:
+            tasks = ['mlm']
         else:
-            tasks = ['mlm', 'itm', 'order', '3class', 'action']
+            tasks = ['mlm', 'mlm', 'itm', 'order', '3class', 'action']
         for step, batch in epoch_iterator:
             task = random.choice(tasks)
             #task = '3class'
