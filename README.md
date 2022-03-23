@@ -1,6 +1,6 @@
 # HOP: History-and-Order Aware Pre-training for Vision-and-Language Navigation
 
-This repository is the official implementation of [HOP: History-and-Order Aware Pre-training for Vision-and-Language Navigation](https://arxiv.org/abs/2007.09554). 
+This repository is the official implementation of [HOP: History-and-Order Aware Pre-training for Vision-and-Language Navigation](https://arxiv.org/abs/2203.11591). 
 
 ![architecture](files/architecture.jpg)
 
