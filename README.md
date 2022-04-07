@@ -13,6 +13,7 @@ conda activate hop
 ## Quick Start
 1. Download processed data and pretrained models.
 After downloading you should see the following folder structure:
+The downloading link is coming soon!
     ```
     ├── data
     │   ├── train
@@ -31,4 +32,5 @@ After downloading you should see the following folder structure:
    
 3. Run finetuning
    * Please check [here](https://github.com/YanyuanQiao/HOP-VLN) for experiment setup and HOP application.
+   The link of finetune is coming soon!
 
