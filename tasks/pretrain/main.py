@@ -710,7 +710,7 @@ def main():
             torch.distributed.barrier()  # Barrier to make sure only the first process in distributed training process the dataset, and the others will use the cache
         jfiles = glob.glob(params['train_data_file'] + "/*.json")  
         jfiles_bnb = 'data/bnb/traj_train.json'  
-        jfiles_bnb = None    
+        #if you do not need processed bnb data, let jfiles_bnb = None     
         train_dataset = NavDataset(jfiles, jfiles_bnb, tokenizer, feature_store, panoramic, params, feature_store_bnb)
         print("you have loaded %d  time steps" % (len(train_dataset)))
         jfiles_eval = glob.glob(params['eval_data_file'] + "/*.json")
