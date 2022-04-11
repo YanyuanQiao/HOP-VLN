@@ -28,5 +28,5 @@ After downloading processed data you should see the following folder structure:
 
 ### Processed BnB data
 Follow instructions in [bnb-dataset](https://github.com/airbert-vln/bnb-dataset) to download listing from Airbnb and images.
-The processing code is coming soon!
+The process instruction is coming soon!
 
