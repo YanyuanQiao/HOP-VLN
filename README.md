@@ -12,18 +12,7 @@ conda activate hop
 ```
 ## Quick Start
 1. Download processed data and pretrained models.
-After downloading you should see the following folder structure:
-The downloading link is coming soon!
-    ```
-    ├── data
-    │   ├── train
-    │   ├── neg
-    │   ├── bnb
-    │   └── collect_traj_test
-    └── img_features
-        ├── ResNet-152-imagenet.tsv
-        └── bnbdata.npz
-    ```
+   Please check [here](https://github.com/YanyuanQiao/HOP-VLN/tree/main/data) to download processed data.
 2. Run Pre-training
    ```sh
    bash run/pretrain.bash
