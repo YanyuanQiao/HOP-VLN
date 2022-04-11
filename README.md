@@ -12,7 +12,7 @@ conda activate hop
 ```
 ## Quick Start
 1. Download processed data and pretrained models.
-   Please check [here](https://github.com/YanyuanQiao/HOP-VLN/tree/main/data) to download processed data.
+   * Please check [here](https://github.com/YanyuanQiao/HOP-VLN/tree/main/data) to download processed data.
 2. Run Pre-training
    ```sh
    bash run/pretrain.bash
