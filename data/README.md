@@ -3,8 +3,10 @@ Our pre-training dataset based on existing datasets: `PREVALENT` and `BnB`. `PRE
 
 ### Processed PREVALENT data
 - Download the [processed PREVALENT data](https://drive.google.com/drive/folders/1jyaHqqOk2P9AKgh1EMx6dqqTWOsnGeo5?usp=sharing).
-
-After downloading processed data you should see the following folder structure:
+### Processed BnB data
+Follow instructions in [bnb-dataset](https://github.com/airbert-vln/bnb-dataset) to download listing from Airbnb and images.
+The process instruction is coming soon!
+After downloading processed PREVALENT data and process BnB data you should see the following folder structure:
 ```
     ├── data
     │   └── train
@@ -26,7 +28,6 @@ After downloading processed data you should see the following folder structure:
 - `traj_train.json` and `traj_test.json` are training and test data for processed BnB data.
 - `bnb_neg.json` is negatives for processed BnB data.
 
-### Processed BnB data
-Follow instructions in [bnb-dataset](https://github.com/airbert-vln/bnb-dataset) to download listing from Airbnb and images.
-The process instruction is coming soon!
+
+
 
