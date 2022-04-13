@@ -6,7 +6,8 @@ Our pre-training dataset based on existing datasets: `PREVALENT` and `BnB`. `PRE
 ### Processed BnB data
 Follow instructions in [bnb-dataset](https://github.com/airbert-vln/bnb-dataset) to download listing from Airbnb and images.
 The process instruction is coming soon!
-After downloading processed PREVALENT data and process BnB data you should see the following folder structure:
+
+-After downloading processed PREVALENT data and processing BnB data you should see the following folder structure:
 ```
     ├── data
     │   └── train
