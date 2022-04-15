@@ -14,9 +14,9 @@ conda activate hop
 1. Download processed data and pretrained models.
    Please follow the instructions below to prepare the data in directories:
    - MP3D navigability graphs: `connectivity`
-    - Download the [connectivity maps ](https://github.com/peteanderson80/Matterport3DSimulator/tree/master/connectivity).
+     - Download the [connectivity maps ](https://github.com/peteanderson80/Matterport3DSimulator/tree/master/connectivity).
    - Processed data: `data`
-    - Download the [Processed data](https://github.com/YanyuanQiao/HOP-VLN/tree/main/data).
+     - Download the [Processed data](https://github.com/YanyuanQiao/HOP-VLN/tree/main/data).
 
 2. Run Pre-training
    ```sh
