@@ -1,1 +1,1 @@
-CUDA_VISIBLE_DEVICES=0,1,2,3 python ./tasks/pretrain/main.py --mlm --do_trainval --run_name hop --include_next False --per_gpu_train_batch_size 128 --per_gpu_eval_batch_size 128 --overwrite_output_dir --learning_rate 5e-5
+CUDA_VISIBLE_DEVICES=0,1,2,3 python ./tasks/pretrain/main.py --mlm --do_trainval --run_name hop --include_next False --per_gpu_train_batch_size 128 --per_gpu_eval_batch_size 128 --overwrite_output_dir --learning_rate 5e-5 --prevalent_only True

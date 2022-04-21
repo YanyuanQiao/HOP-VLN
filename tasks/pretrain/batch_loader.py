@@ -168,8 +168,10 @@ class NavDataset(data.Dataset):
         self.tok = tok    # should be a lang, vision, action aware tokenizer ['VCLS', 'ACLS']
         self.mask_index = tok._convert_token_to_id(tok.mask_token)
         self.feature_store = Feature(img_path, panoramic)
-
-        self.feature_store_bnb = Feature_bnb(img_path_bnb)
+        if args['prevalent_only']:
+            self.feature_store_bnb = Feature(img_path, panoramic)
+        else:
+            self.feature_store_bnb = Feature_bnb(img_path_bnb)
         self.args = args
         self.nag_dirs = 'data/neg/candidate_sm.json'
         self.nag_trajs = []
@@ -177,10 +179,15 @@ class NavDataset(data.Dataset):
         with open(self.nag_dirs_seq) as f:
             nag_trajs_seq = json.load(f)
         self.nag_trajs_seq = nag_trajs_seq
-        self.nag_dirs_bnb = 'data/neg/bnb_neg.json'
-        with open(self.nag_dirs_bnb) as f:
-            nag_trajs_bnb = json.load(f)
-        self.nag_trajs_bnb = nag_trajs_bnb
+
+        if args['prevalent_only']:
+            self.nag_trajs_bnb = None
+        else:
+            self.nag_dirs_bnb = 'data/neg/bnb_neg.json'
+            with open(self.nag_dirs_bnb) as f:
+                nag_trajs_bnb = json.load(f)
+                self.nag_trajs_bnb = nag_trajs_bnb
+
         self.data = []
         self.instr_refer_bnb = dict()  # instr_id : instr_encoding
         if bnb_dir is not None:

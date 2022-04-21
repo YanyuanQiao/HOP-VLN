@@ -29,6 +29,8 @@ logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 rq = time.strftime('%Y%m%d%H%M', time.localtime(time.time()))
 log_path = os.getcwd() + '/logs/'
+if not os.path.exists(log_path):
+    os.makedirs(log_path)
 log_name = log_path + rq + '.log'
 logfile = log_name
 fh = logging.FileHandler(logfile, mode='w')
@@ -170,10 +172,10 @@ def trainval(args, train_dataset, eval_dataset, model, tokenizer):
                               total=len(train_dataloader),
                               bar_format="{l_bar}{r_bar}",
                               disable=False)
-        if epo < 2:
-            tasks = ['mlm']
+        if epo < 3:
+            tasks = ['mlm', 'itm', 'order', '3class', 'action']
         else:
-            tasks = ['mlm', 'mlm', 'itm', 'order', '3class', 'action']
+            tasks = ['mlm', 'itm', 'order', '3class', 'action']
         for step, batch in epoch_iterator:
             task = random.choice(tasks)
             #task = '3class'
@@ -612,6 +614,7 @@ def main():
     parser.add_argument("--resume_path", default=None, type=str,
                         help="The model checkpoint for weights initialization.") 
     parser.add_argument('-r', '--run_name', type=str, help="name for wandb run", required=True)
+    parser.add_argument("--prevalent_only", type=bool, default=False)
     args = parser.parse_args()
     params = vars(args)
 
@@ -709,8 +712,10 @@ def main():
         if params['local_rank'] not in [-1, 0]:
             torch.distributed.barrier()  # Barrier to make sure only the first process in distributed training process the dataset, and the others will use the cache
         jfiles = glob.glob(params['train_data_file'] + "/*.json")  
-        jfiles_bnb = 'data/bnb/traj_train.json'  
-        #if you do not need processed bnb data, let jfiles_bnb = None     
+        if params['prevalent_only']:
+            jfiles_bnb = None
+        else:
+            jfiles_bnb = 'data/bnb/traj_train.json'      
         train_dataset = NavDataset(jfiles, jfiles_bnb, tokenizer, feature_store, panoramic, params, feature_store_bnb)
         print("you have loaded %d  time steps" % (len(train_dataset)))
         jfiles_eval = glob.glob(params['eval_data_file'] + "/*.json")

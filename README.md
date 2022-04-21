@@ -24,6 +24,10 @@ conda activate hop
    ```
    The trained model will be saved under `result/`.
    
+   You can also train model using only the processed PREVALENT data:
+   
+   let `--prevalent_only = True` in `pretrain.bash`
+   
 3. Run finetuning
    * Please check [here](https://github.com/YanyuanQiao/HOP-VLN) for experiment setup and HOP application.
    The link of finetune is coming soon!

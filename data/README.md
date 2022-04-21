@@ -29,5 +29,4 @@ The process instruction is coming soon!
 - `traj_train.json` and `traj_test.json` are training and test data for processed BnB data.
 - `bnb_neg.json` is negatives for processed BnB data.
 
-You can also train model using only the processed PREVALENT data. Please see https://github.com/YanyuanQiao/HOP-VLN/blob/0917125464240c37226d63342311d0e7bb4e7cc4/tasks/pretrain/main.py#L713
 
