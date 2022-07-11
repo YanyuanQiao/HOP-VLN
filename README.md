@@ -29,6 +29,5 @@ conda activate hop
    let `--prevalent_only = True` in `pretrain.bash`
    
 3. Run finetuning
-   * Please check [here](https://github.com/YanyuanQiao/HOP-VLN) for experiment setup and HOP application.
-   The link of finetune is coming soon!
+   * Please check [here](https://github.com/YanyuanQiao/HOP-VLN-finetune) for experiment setup and HOP application.
 
