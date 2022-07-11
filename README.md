@@ -35,11 +35,11 @@ conda activate hop
 If you use or discuss our Recurrent VLN-BERT, please cite our paper:
 ```
 @InProceedings{Qiao2022HOP,
-    author    = {Hong, Yicong and Wu, Qi and Qi, Yuankai and Rodriguez-Opazo, Cristian and Gould, Stephen},
-    title     = {A Recurrent Vision-and-Language BERT for Navigation},
+    author    = {Qiao, Yanyuan, Qi Yuankai, Hong, Yicong, Yu, Zheng, Wang, Peng and Wu, Qi},
+    title     = {HOP: History-and-Order Aware Pre-training for Vision-and-Language Navigation},
     booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
     month     = {June},
-    year      = {2021},
-    pages     = {1643-1653}
+    year      = {2022},
+    pages     = {15418-15427}
 }
 ```
