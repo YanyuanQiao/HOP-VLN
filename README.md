@@ -31,3 +31,15 @@ conda activate hop
 3. Run finetuning
    * Please check [here](https://github.com/YanyuanQiao/HOP-VLN-finetune) for experiment setup and HOP application.
 
+## Citation
+If you use or discuss our Recurrent VLN-BERT, please cite our paper:
+```
+@InProceedings{Qiao2022HOP,
+    author    = {Hong, Yicong and Wu, Qi and Qi, Yuankai and Rodriguez-Opazo, Cristian and Gould, Stephen},
+    title     = {A Recurrent Vision-and-Language BERT for Navigation},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2021},
+    pages     = {1643-1653}
+}
+```
