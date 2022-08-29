@@ -32,7 +32,7 @@ conda activate hop
    * Please check [here](https://github.com/YanyuanQiao/HOP-VLN-finetune) for experiment setup and HOP application.
 
 ## Citation
-If you use or discuss our Recurrent VLN-BERT, please cite our paper:
+If you use or discuss our HOP, please cite our paper:
 ```
 @InProceedings{Qiao2022HOP,
     author    = {Qiao, Yanyuan, Qi Yuankai, Hong, Yicong, Yu, Zheng, Wang, Peng and Wu, Qi},
