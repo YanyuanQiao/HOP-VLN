@@ -5,7 +5,7 @@ Our pre-training dataset based on existing datasets: `PREVALENT` and `BnB`. `PRE
 - Download the [processed PREVALENT data](https://drive.google.com/drive/folders/1jyaHqqOk2P9AKgh1EMx6dqqTWOsnGeo5?usp=sharing).
 ### Processed BnB data
 Follow instructions in [bnb-dataset](https://github.com/airbert-vln/bnb-dataset) to download listing from Airbnb and images.
-The process instruction is coming soon!
+The process is similar to bnb-dataset. We we first removed captionless images (i.e. images without captions) and then concatenated the images into paths and the corresponding captions into an instruction. Here each trajectory contains 5~7 images. Finally, image features are extracted using the Resnet-152 network pre-trained on ImageNet.
 
 - After downloading processed PREVALENT data and processing BnB data you should see the following folder structure:
 ```
